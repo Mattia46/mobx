@@ -1,10 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Mattia, TimerView } from './main/main';
+import Main from './main/main';
 import DevTools from 'mobx-react-devtools';
 
-ReactDOM.render(
-    <TimerView mattia={new Mattia()} />,
-	document.getElementById('root')
+import { Provider } from 'mobx-react';
+import BirdStore from './stores/mainStore';
+
+const Root = (
+    <Provider BirdStore={BirdStore}>
+        <Main />
+    </Provider>
+);
+
+//<TimerView mattia={new Mattia()} />,
+ReactDOM.render(Root,
+    document.getElementById('root')
 );
 
