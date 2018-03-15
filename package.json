@@ -9,7 +9,7 @@
     "pr": "git request-pull v1.0 git@github.com:Mattia46/mobx.git master"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mattia Assogna",
   "license": "ISC",
   "dependencies": {
     "react": "^16.2.0",
