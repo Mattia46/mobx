@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no  test specified\" && exit 1",
     "start": "./node_modules/.bin/webpack-dev-server",
-    "pr": "git request-pull v1.0 git@github.com:Mattia46/mobx.git master"
+    "pr": "git request-pull v1.0 git@github.com:Mattia46/mobx.git master",
+    "prepush": "echo \"You're pushing, Ciao Mattia let's run lint and test before...\"",
   },
   "keywords": [],
   "author": "Mattia Assogna",
   "license": "ISC",
   "dependencies": {
+    "husky": "^0.14.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
