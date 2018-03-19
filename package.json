@@ -7,7 +7,7 @@
     "test": "echo \"Error: no  test specified\" && exit 1",
     "start": "./node_modules/.bin/webpack-dev-server",
     "pr": "git request-pull v1.0 git@github.com:Mattia46/mobx.git master",
-    "prepush": "echo \"You're pushing, Ciao Mattia let's run lint and test before...\"",
+    "prepush": "echo \"You're pushing, Ciao Mattia let's run lint and test before...\" && npm test",
   },
   "keywords": [],
   "author": "Mattia Assogna",
